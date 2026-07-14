@@ -128,3 +128,4 @@ that help understand:
   - Conditional formatting
 
 ---
+[Check out the Analyzed Excel Report](https://docs.google.com/spreadsheets/d/1tnCa-pibqya-G3t5WPRMrtiP7m3d8-8F/edit?usp=drive_link&ouid=110336582994679977357&rtpof=true&sd=true)
