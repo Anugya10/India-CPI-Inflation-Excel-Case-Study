@@ -1,6 +1,6 @@
 ## India CPI Inflation Analysis (2013–2023)
 
-### 📌 Overview
+## 📌 Overview
 This project analyzes 10 years of Consumer Price Index (CPI) data 
 sourced from the Government of India (GOI) to uncover inflation 
 trends, identify key price drivers, and investigate the impact of 
