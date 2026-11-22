@@ -26,9 +26,9 @@ An end-to-end Excel data analytics case study on India's Consumer Price Index (C
 - **Columns:** Sector, Year, Month and about 27 category indices, including the food sub-categories (cereals, meat and fish, egg, milk, oils and fats, fruits, vegetables, pulses, sugar, spices, beverages, prepared meals), the broader divisions (Food and beverages, Pan/tobacco, Clothing and footwear, Housing, Fuel and light, Household goods, Health, Transport and communication, Recreation, Education, Personal care, Miscellaneous) and the **General Index** (overall inflation for all categories combined)
 - **Oil data (Q5):** Brent crude monthly average prices for 2021 to 2023
 
-## Excel analysis file (Google Drive)
+## Excel analysis file
 
-[India CPI Inflation Case Study(https://docs.google.com/spreadsheets/d/1C6jBW9gnhz7IieU8gSdJdBZSiMCeflX3/edit?gid=100897086#gid=100897086)
+[India CPI Inflation Case Study](https://docs.google.com/spreadsheets/d/1C6jBW9gnhz7IieU8gSdJdBZSiMCeflX3/edit?gid=100897086#gid=100897086)
 
 ## Workbook structure
 
