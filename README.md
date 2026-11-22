@@ -28,7 +28,7 @@ An end-to-end Excel data analytics case study on India's Consumer Price Index (C
 
 ## Excel analysis file (Google Drive)
 
-[India CPI Inflation Case Study - Excel File]([PASTE-YOUR-GOOGLE-DRIVE-LINK-HERE](https://docs.google.com/spreadsheets/d/1C6jBW9gnhz7IieU8gSdJdBZSiMCeflX3/edit?gid=100897086#gid=100897086))
+[India CPI Inflation Case Study(https://docs.google.com/spreadsheets/d/1C6jBW9gnhz7IieU8gSdJdBZSiMCeflX3/edit?gid=100897086#gid=100897086))
 
 ## Workbook structure
 
