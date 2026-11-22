@@ -1,29 +1,10 @@
 # India CPI Inflation Analysis (2013 - May 2023)
 
-An end-to-end Excel data analytics case study on India's Consumer Price Index (CPI). Acting as an analyst at the National Statistical Office (NSO), I cleaned monthly CPI data, built a formula-driven calculation layer, and answered five questions on category contribution, inflation trends, food prices, the COVID-19 impact and the influence of crude oil prices.
-
-Built as part of the Data Analytics course at Coding Ninjas.
-
----
-
-## Table of contents
-
-1. [Project overview](#project-overview)
-2. [Dataset](#dataset)
-3. [Repository files](#repository-files)
-4. [Excel analysis file (Google Drive)](#excel-analysis-file-google-drive)
-5. [Workbook structure](#workbook-structure)
-6. [Data cleaning](#data-cleaning)
-7. [Key formulas](#key-formulas)
-8. [Questions, approach and insights](#questions-approach-and-insights)
-9. [Skills and tools](#skills-and-tools)
-10. [Author](#author)
-
----
+An end-to-end Excel data analytics case study on India's Consumer Price Index (CPI). Acting as an analyst at the National Statistical Office (NSO), I cleaned monthly CPI data, built a formula-driven calculation layer, and answered five questions on category contribution, inflation trends, food prices, the COVID-19 impact, and the influence of crude oil prices.
 
 ## Project overview
 
-**Objective:** use CPI data to find key inflation trends and explain what drove them.
+**Objective:** Use CPI data to find key inflation trends and explain what drove them.
 
 **Background:** CPI measures the average change in prices of a fixed basket of goods and services against a base year (2012 = 100). A CPI of 110 means prices are 10% higher than in the base year. Because CPI is an index, index values are compared using percentage changes and are never summed across months.
 
@@ -37,33 +18,17 @@ Built as part of the Data Analytics course at Coding Ninjas.
 | Q4 | How did the COVID-19 lockdown (March 2020) affect inflation? |
 | Q5 | How strongly did imported crude oil price changes influence category inflation (2021 to 2023)? |
 
----
-
 ## Dataset
 
-- **Source:** CPI index data published by the Government of India (via the Coding Ninjas course platform)
+- **Source:** CPI index data published by the Government of India 
 - **Period:** January 2013 to May 2023 (monthly)
 - **Sectors:** Rural (CPI-R), Urban (CPI-U) and Rural+Urban (combined)
 - **Columns:** Sector, Year, Month and about 27 category indices, including the food sub-categories (cereals, meat and fish, egg, milk, oils and fats, fruits, vegetables, pulses, sugar, spices, beverages, prepared meals), the broader divisions (Food and beverages, Pan/tobacco, Clothing and footwear, Housing, Fuel and light, Household goods, Health, Transport and communication, Recreation, Education, Personal care, Miscellaneous) and the **General Index** (overall inflation for all categories combined)
 - **Oil data (Q5):** Brent crude monthly average prices for 2021 to 2023
 
----
-
-## Repository files
-
-| File | Description |
-|---|---|
-| `India_CPI_Inflation_Case_Study_Interview_Version.xlsx` | Excel workbook: cleaned data, calculation layer, charts and insights for all five questions |
-| `India_CPI_Insights_Report.pdf` | 5-page report with each question, its chart and its insights |
-| `README.md` | Project documentation |
-
----
-
 ## Excel analysis file (Google Drive)
 
-[India CPI Inflation Case Study - Excel File](PASTE-YOUR-GOOGLE-DRIVE-LINK-HERE)
-
----
+[India CPI Inflation Case Study - Excel File]([PASTE-YOUR-GOOGLE-DRIVE-LINK-HERE](https://docs.google.com/spreadsheets/d/1C6jBW9gnhz7IieU8gSdJdBZSiMCeflX3/edit?gid=100897086#gid=100897086))
 
 ## Workbook structure
 
@@ -79,9 +44,6 @@ Built as part of the Data Analytics course at Coding Ninjas.
 | `Q4_COVID_Impact` | Before vs after March 2020 comparison and chart |
 | `Q5_Oil_Correlation` | Oil price series, correlation of every category with oil, chart |
 
-**Colour code:** blue font = hard-coded input, black = formula, yellow = value imputed by formula, green = added row, red = corrected text.
-
----
 
 ## Data cleaning
 
@@ -92,8 +54,6 @@ Built as part of the Data Analytics course at Coding Ninjas.
 | April 2019 missing entirely | Added three rows (Rural, Urban, Rural+Urban) interpolated from March and May 2019, so every year has 12 months |
 | Month-label typos (`"Marcrh"`, `"November "`) | Corrected so month-based lookups work |
 | Row order independence | Added a `Key_YYYYMM` column (Year x 100 + Month number, e.g. May 2023 = 202305) so formulas look up values by key instead of by row position |
-
----
 
 ## Key formulas
 
@@ -107,8 +67,6 @@ Built as part of the Data Analytics course at Coding Ninjas.
 | Correlation with oil | `=CORREL(category MoM % range, oil MoM % range)` |
 | Highest / lowest lookup | `=INDEX(labels, MATCH(MAX(values), values, 0))` |
 
----
-
 ## Questions, approach and insights
 
 ### Q1. Category contribution to the CPI basket (May 2023)
@@ -117,12 +75,12 @@ Built as part of the Data Analytics course at Coding Ninjas.
 
 **Approach:**
 - The latest month is found with `MAX(Key)`, which gives 202305 (May 2023)
-- The 12 broader CPI divisions are used as buckets. The data already contains their combined indices (for example Food and beverages), so the sub-items are not added again
-- With equal weights across categories, contribution = category index / sum of all 12 indices, so the total is 100%
+- The 12 broader CPI divisions are used as buckets. The data already contains their combined indices (for example, Food and beverages), so the sub-items are not added again
+- With equal weights across categories, contribution = category index/sum of all 12 indices, so the total is 100%
 - Done separately for Rural+Urban, Rural and Urban
 
 **Insights:**
-- **Pan, tobacco and intoxicants has the highest contribution: 9.31%** (Rural 10.0%, Urban 9.5%)
+- **Pan, tobacco and intoxicants have the highest contribution: 9.31%** (Rural 10.0%, Urban 9.5%)
 - Its index is about 201, the highest of all 12 categories
 - Other categories range from 7.6% (Transport and communication, lowest) to 8.6% (Clothing and footwear)
 - Rural has no Housing in its basket, so Rural shares are calculated over 11 categories
@@ -148,7 +106,7 @@ Built as part of the Data Analytics course at Coding Ninjas.
 **Question:** Analyse the broader food category's month-on-month changes for the 12 months ending May 2023, highlight the highest and lowest months, and identify the biggest individual food category contributor to inflation.
 
 **Approach:**
-- Month-on-month % change of the Food and beverages index, for Rural+Urban, Rural and Urban (May 2022 is the base for the first change)
+- Month-on-month % change of the Food and beverages index for Rural+Urban, Rural, and Urban (May 2022 is the base for the first change)
 - Highest and lowest months found with `MAX`/`MIN` and `INDEX/MATCH`
 - Absolute change in index points for each of the 12 food sub-categories between May 2022 and May 2023, ranked
 - Charts: MoM line chart and sub-category change bar chart
@@ -181,7 +139,7 @@ Built as part of the Data Analytics course at Coding Ninjas.
 
 **Approach:**
 - Brent crude monthly prices and their month-on-month % change
-- MoM % change of every category from `Calc_RU`
+- MoM % change of every category from `Calc_RU.`
 - `CORREL` between each category's MoM % and the oil MoM %, over 28 monthly points (February 2021 to May 2023, the period CPI data covers)
 - Categories ranked by correlation, with a 5% significance check (|r| of about 0.374)
 - Chart: correlation bar chart for all categories
@@ -191,8 +149,6 @@ Built as part of the Data Analytics course at Coding Ninjas.
 - Fuel and light (0.13), Transport and communication (0.08) and the General Index (0.08) barely move with oil month to month, plausibly because retail fuel prices are administered and pass through with a lag
 - Several staples are negatively correlated (Cereals -0.28, Milk -0.28, Pulses -0.25), showing monthly food prices are driven mainly by seasonality and domestic supply
 
----
-
 ## Skills and tools
 
 - **Excel:** SUMIFS, AVERAGEIFS, COUNTIFS, INDEX/MATCH, RANK, CORREL, MAX/MIN, charts
@@ -200,9 +156,7 @@ Built as part of the Data Analytics course at Coding Ninjas.
 - **Analysis:** year-on-year and month-on-month growth, contribution analysis, before/after comparison, correlation analysis
 - **Reporting:** insight writing and chart-based communication
 
----
-
 ## Author
 
-**Your Name**
-[LinkedIn](https://www.linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
+**Anugya Singhal**
+[LinkedIn](https://www.linkedin.com/in/your-profile)
