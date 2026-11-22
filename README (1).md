@@ -49,7 +49,16 @@ Built as part of the Data Analytics course at Coding Ninjas.
 
 Excel (SUMIFS, AVERAGEIFS, COUNTIFS, INDEX/MATCH, RANK, CORREL, charts)
 
+## Repository files
+
+| File | Description |
+|---|---|
+| `India_CPI_Inflation_Case_Study.xlsx` | Excel workbook with cleaned data, calculations, charts and insights for all 5 questions |
+| `India_CPI_Insights_Report.pdf` | Questions and insights report (5 pages) |
+
 ## Author
 
-**Your Name**
-[LinkedIn](https://www.linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
+**Anugya Singhal**
+[LinkedIn](https://www.linkedin.com/in/your-profile)
+
+
