@@ -11,13 +11,6 @@ Built as part of the Data Analytics course at Coding Ninjas.
 - **Sectors:** Rural, Urban, Rural+Urban
 - **Categories:** about 27 categories plus the General Index (base year 2012 = 100)
 
-## Repository files
-
-| File | Description |
-|---|---|
-| `India_CPI_Inflation_Case_Study_Interview_Version.xlsx` | Excel workbook with cleaned data, calculations, charts and insights for all 5 questions |
-| `India_CPI_Insights_Report.pdf` | Questions and insights report (5 pages) |
-
 ## Questions and insights
 
 ### Q1. Category contribution to the CPI basket (May 2023)
@@ -39,7 +32,7 @@ Built as part of the Data Analytics course at Coding Ninjas.
 ### Q4. Impact of COVID-19 (onset March 2020)
 - Average inflation rose from **4.51% to 5.67%** in the 12 months after March 2020 (+1.16 pp).
 - Biggest rises: Oils and fats (+10.6 pp), Pulses (+7.3 pp), Transport and communication (+5.9 pp), Meat and fish (+5.2 pp).
-- Vegetables fell (-12.4 pp) and Health fell (-2.1 pp).
+- Vegetables fell (-12.4 pp), and Health fell (-2.1 pp).
 
 ### Q5. Imported oil prices and inflation (2021 - 2023)
 - **Meat and fish (r = 0.40) and Oils and fats (r = 0.38)** show the strongest correlation with oil price changes.
@@ -53,7 +46,7 @@ Excel (SUMIFS, AVERAGEIFS, COUNTIFS, INDEX/MATCH, RANK, CORREL, charts)
 
 | File | Description |
 |---|---|
-| `India_CPI_Inflation_Case_Study.xlsx` | Excel workbook with cleaned data, calculations, charts and insights for all 5 questions |
+| `India_CPI_Inflation_Case_Study_.xlsx` | Excel workbook with cleaned data, calculations, charts and insights for all 5 questions |
 | `India_CPI_Insights_Report.pdf` | Questions and insights report (5 pages) |
 
 ## Author
